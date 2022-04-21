@@ -1,1 +1,13 @@
-# 100Projects_Of_Code
+#Project Euler
+
+Challenges Completed:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
