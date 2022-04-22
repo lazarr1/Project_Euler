@@ -32,30 +32,39 @@ int main(){
     int sum = 0, n =0;
 
     for(int j = 2; j<= x; j++){
-        for(int i = 2; i <= 21; i++){
-            
-            coefs = getCoefs(i);
+        for(int i = 2; i <= x; i++){
 
-            coefsRl[0] = (long long int)coefs[0];
-            coefsRl[1] = (long long int)(coefs[1]/sqrt(7));
+            int l = (int)round(pow(2,i));
+            
+            
+            if( (l - 1) % j == 0 ){
+                printf("%i: %i\n", j, i);
+                sum += i;
+                break;
+            }
+            
+            // coefs = getCoefs(i);
+
+            // coefsRl[0] = (long long int)coefs[0];
+            // coefsRl[1] = (long long int)(coefs[1]/sqrt(7));
            
-            printf("looking for %i: attempt %i: %lli, %lli\n",j, i, coefsRl[0] % j, coefsRl[1] % j);
+            // printf("looking for %i: attempt %i: %lli, %lli\n",j, i, coefsRl[0] % j, coefsRl[1] % j);
 
-            if(coefsRl[0] % j == 1 && coefsRl[1] % j == 0){
-                n = i;
-                break;
-            }
-            else if( i == 21){
-                n = 0;
-                break;
-            }
+            // if(coefsRl[0] % j == 1 && coefsRl[1] % j == 0){
+            //     n = i;
+            //     break;
+            // }
+            // else if( i == 21){
+            //     n = 0;
+            //     break;
+            // }
             
-            free(coefs);
+            // free(coefs);
 
         }
 
 
-        sum += n;
+        //sum += n;
     }
 
 
