@@ -7,7 +7,7 @@ int main(){
     int c =20;
     while(1){
 
-        for(int i =1; i<= 20; i++){
+        for(int i =1; i<= c; i++){
             if(c % i != 0){
                 break;
             }
@@ -23,7 +23,7 @@ int main(){
     }
 
     success:
-        printf("%i", c);
+        printf("%i\n", c);
 
 
 
