@@ -3,7 +3,5 @@
 Challenges Completed: 
 - 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 15
 
-770
-
 Currently Working on:
-- 752, 760, 77777
+- 752, 760
