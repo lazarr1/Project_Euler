@@ -6,7 +6,7 @@
 
 
 
-long int * generateList(int maxPrime, int * noPrimes){
+long int * generateListOfPrimes(int maxPrime, int * noPrimes){
 
     int i =3;
 
@@ -55,7 +55,7 @@ int main(){
 
     int numPrimes[1] = {1};
 
-    long int * listOfPrimes = generateList(BUFFER, numPrimes); //generate a list of primes within a buffer
+    long int * listOfPrimes = generateListOfPrimes(BUFFER, numPrimes); //generate a list of primes within a buffer
     
     int listOfPrimeDivisors[BUFFER] = {1};
 
